@@ -103,10 +103,15 @@ header{
     
   }
 
-  .nav ul {
+  .ul-1{
+    color:pink;
+  }
+
+  .nav ul{
     list-style: none;
     display: flex;
     gap: 20px;
+    padding:20px;
    
   }
   
