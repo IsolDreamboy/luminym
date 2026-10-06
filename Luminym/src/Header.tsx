@@ -2,13 +2,43 @@ import React from 'react';
 
 function Header(): React.JSX.Element {
   return (
-    <div className="w-full flex justify-center items-center">
-      <nav className="w-full flex justify-between m-10 border-2 rounded-xl p-10 items-center text-pink-500">
-
-        <h1 className="text-2xl font-bold">Testando Tailwind</h1>
-        <p className="text-slate-400">Se a tela tiver escura com este texto cinza, tá funcionando.</p>
+    <div className="w-full flex justify-center items-center bg-[#ffffff] z-10">
+      <nav className="w-full max-w-10xl flex justify-between m-1 border-2 rounded-xl bg-[#ffffff] px-6 py-2 items-center text-pink-500">
+        <div>
+          <a href="#index">
+            <img className="size-16 w-auto rounded-md bg-[#ffffff]" src="/CorLogo3.png" alt="Logo" />
+          </a>
+        </div>
+        <div className="flex gap-100 items-center">
+          <a 
+            href="#" 
+            className="relative text-2xl font-bold text-[#080b1a] py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[4px] after:w-full after:bg-black after:scale-x-0 after:origin-center after:transition-transform after:duration-400 hover:after:scale-x-100"
+          >
+            HOME
+          </a>
+          <a 
+            href="#" 
+            className="relative text-2xl font-bold text-[#080b1a] py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[4px] after:w-full after:bg-black after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+          >
+            SOBRE
+          </a>
+          <a 
+            href="#" 
+            className="relative text-2xl font-bold text-[#080b1a] py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[4px] after:w-full after:bg-black after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+          >
+            SERVIÇOS
+          </a>
+          <a 
+            href="#" 
+            className="relative text-2xl font-bold text-[#080b1a] py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[4px] after:w-full after:bg-black after:scale-x-0 after:origin-center after:transition-transform after:duration-300 hover:after:scale-x-100"
+          >
+            CONTATO
+          </a>
+        </div>
       </nav>
     </div>
+
+    
   );
 }
 
