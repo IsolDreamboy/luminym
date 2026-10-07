@@ -1,10 +1,2 @@
 @import "tailwindcss";
 
-a:hover{
-  color: #ff6b6b;
-  outline:#ff6b6b;
-  transition: color 0.3s ease;
-  text-transform: uppercase;
-
-}
-

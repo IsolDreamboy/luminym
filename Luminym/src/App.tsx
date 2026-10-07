@@ -8,6 +8,19 @@ function App() {
       <Header />
       <Banner />
       <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
     </div>
   )
 }

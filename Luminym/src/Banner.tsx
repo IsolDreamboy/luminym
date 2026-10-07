@@ -5,13 +5,13 @@ function Banner() {
           <h1 className="text-9xl md:text-x font-extrabold  text-[pink] text-tiny mb-6">
             Luminyn Studio
           </h1>
-          <p className="text-xl md:text-2xl text-[pink] mb-10 max-w-2xl">
+          <p className="text-xl md:text-7xl text-[pink] font-extratiny mb-10 max-w-2xl">
             Transformando ideias em realidade.
           </p>
-          <a 
+          <a  
             href="#contato" 
-            className="bg-slate-900 text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-slate-800 transition-colors shadow-lg"
-          >
+            className="flex justify-center items-center w-80 h-16 rounded-xl text-[#ffff] bg-[#080b1a] text-[20px] font-bold duration-600 hover:bg-[#14193D] hover:text-[#5B5D63]"
+                      >
             Entre em contato conosco
           </a>
         </section>
