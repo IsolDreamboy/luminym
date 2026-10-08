@@ -3,7 +3,7 @@ import React from 'react';
 function Header(): React.JSX.Element {
   return (
     <div className="w-full flex justify-center items-center bg-[#ffffff]  fixed top-0 left-0 w-full z-[1000] shadow-xl shadow-[rgba(0,0,0,0.2)]">
-      <nav className="w-full max-w-10xl flex justify-between m-1 border-2 rounded-xl bg-[#ffffff] px-6 py-2 items-center text-pink-500">
+      <nav className="w-full max-w-10xl flex justify-between m-1 rounded-xl bg-[#ffffff] px-6 py-2 items-center text-pink-500">
         <div>
           <a href="#">
             <img className="size-16 w-auto rounded-md bg-[#ffffff]" src="/CorLogo3.png" alt="Logo" />
