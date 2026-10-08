@@ -1,2 +1,20 @@
 @import "tailwindcss";
 
+@keyframes fade1 {
+  0%, 25%, 100% { opacity: 1; }
+  33%, 92% { opacity: 0; }
+}
+@keyframes fade2 {
+  0%, 25%, 100% { opacity: 0; }
+  33%, 58% { opacity: 1; }
+  66%, 92% { opacity: 0; }
+}
+@keyframes fade3 {
+  0%, 58% { opacity: 0; }
+  66%, 92% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-crossfade-1 { animation: fade1 4s infinite ease-in-out; }
+.animate-crossfade-2 { animation: fade2 4s infinite ease-in-out; }
+.animate-crossfade-3 { animation: fade3 4s infinite ease-in-out; }
