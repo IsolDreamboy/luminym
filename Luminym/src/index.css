@@ -18,3 +18,26 @@
 .animate-crossfade-1 { animation: fade1 4s infinite ease-in-out; }
 .animate-crossfade-2 { animation: fade2 4s infinite ease-in-out; }
 .animate-crossfade-3 { animation: fade3 4s infinite ease-in-out; }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
+
+
+@media (hover: hover) {
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}

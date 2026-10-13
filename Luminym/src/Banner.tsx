@@ -24,12 +24,18 @@ function Banner() {
               </span>
             </span>
           </h2>
-          <a  
-            href="#contato" 
-            className="flex justify-center items-center w-90 h-23 rounded-xl text-[#dfe3ff] bg-[#1e2035] text-[30px] font-bold duration-600 hover:bg-[#191b29] hover:text-[#f6f7fa]"
-                      >
-            Fale com a Luminyn
-          </a>
+            <a
+              href="#Contato"
+              className="flex justify-center items-center text-center
+                        w-full max-w-xs sm:max-w-sm md:w-80 lg:w-96
+                        h-14 md:h-16 lg:h-20 px-6 rounded-xl
+                        text-base sm:text-lg md:text-2xl font-bold
+                        text-[#dfe3ff] bg-[#1e2035]
+                        transition-colors duration-500 hover:bg-[#191b29] hover:text-[#f6f7fa]
+                        focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dfe3ff]"
+            >
+              Fale com a Luminyn
+            </a>
         </section>
   );
 }

@@ -3,6 +3,7 @@ import Header from './Header'
 import Banner from './Banner'
 import Sobre from './Sobre'
 import Servicos from './Servicos'
+import Contato from './Contato'
 
 function App() {
   return (
@@ -11,16 +12,7 @@ function App() {
       <Banner />
       <Sobre />
       <Servicos />
-      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
-      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
-      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
-      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
-      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
-      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
-      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
-      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
-      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
-      <h3 className="size-86 font-bold text-[#080b1a] py-1">Writes upside-down</h3>
+      <Contato />
     </div>
   )
 }
