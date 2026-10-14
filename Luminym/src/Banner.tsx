@@ -24,6 +24,7 @@ function Banner() {
               </span>
             </span>
           </h2>
+          
             <a
               href="#Contato"
               className="flex justify-center items-center text-center
@@ -36,6 +37,8 @@ function Banner() {
             >
               Fale com a Luminyn
             </a>
+
+        
         </section>
   );
 }

@@ -21,7 +21,7 @@ const servicos = [
     alt: "Sites e Soluções Digitais",
     titulo: "Sites e Soluções Digitais",
     texto:
-      "Desenvolvemos sites e sistemas personalizados, sempre visando funcionalidade, desempenho e experiência do usuário. Usamos tecnologia avançada para criar soluções eficientes e intuitivas.",
+      "Desenvolvemos sites e sistemas únicos, visando funcionalidade, desempenho e experiência do usuário. Usamos tecnologia a para criar soluções eficientes e intuitivas.",
   },
 ];
 
@@ -56,7 +56,7 @@ function Servicos() {
             para a sua{" "}
             <span className="inline-grid items-baseline align-baseline leading-none text-white select-none">
               {/* caixa roxa fixa */}
-            <span aria-hidden="true" className="relative z-0 col-start-1 row-start-1 -mt-[0.1em] top-[0.2em] h-[0.95em] rounded-[0.15em] bg-purple-800" />
+            <span aria-hidden="true" className="relative z-0 col-start-1 row-start-1 -mt-[0.1em] top-[0.2em] h-[0.95em] right-[0.10em] rounded-[0.15em] bg-purple-800" />
 
             <span style={{ fontSize: "1.1em" }} className="relative z-10 col-start-1 row-start-1 px-[0.3em] leading-[0] text-left font-sans -translate-y-[0.0em] opacity-0 animate-crossfade-1">marca.</span>
             <span className="relative z-10 col-start-1 row-start-1 px-[0.3em] leading-[0] text-left font-serif italic translate-y-[0] opacity-0 animate-crossfade-2">marca.</span>
@@ -127,10 +127,10 @@ function Servicos() {
                 />
               </div>
 
-              <h3 className="text-[#f3f5f7] text-xl md:text-2xl lg:text-3xl font-bold">
+              <h3 className="text-[#f3f5f7] text-xl md:text-xl lg:text-2xl font-bold">
                 {s.titulo}
               </h3>
-              <p className="text-[#f3f5f7] text-sm md:text-base lg:text-xl leading-snug font-bold ">
+              <p className="text-center text-[#f3f5f7] font-semibold text-xs md:text-base lg:text-lg leading-relaxed tracking-wide text-balance">
                 {s.texto}
               </p>
             </article>
