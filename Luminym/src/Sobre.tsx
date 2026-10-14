@@ -42,16 +42,12 @@ function Sobre() {
               hoveredSide === "left" ? "opacity-100 bg-[#1e2035]" : "opacity-0 pointer-events-none" 
             }`}
           >
-            <h3 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1">Programadores</h3>
-            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
-              Transforme sua presença online com um site que realmente se destaca. Sou um programador experiente e posso criar um site personalizado que atenda às suas necessidades específicas.
+            <h3 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1"> Design Gráfico</h3>
+            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight"> Desenvolvimento de logos personalizadas, destacando sua ideia principal utilizando dos meios adequados.</p>
+            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">Usando a paleta de cores para fazer da sua ideia Luminyn.
+                Usando a paleta de cores para fazer da sua ideia Luminyn.
             </p>
-            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
-              Ofereço design responsivo e moderno, otimização para SEO e integração com redes sociais, além de suporte técnico contínuo.
-            </p>
-            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-bold leading-tight mt-1">
-              Entre em contato e vamos discutir como posso ajudar a levar seu negócio para o próximo nível!
-            </p>
+            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-bold leading-tight mt-1">Materiais diversos e tipografia adequada para o Seu caso. Faça com a Luminyn a sua ideia virar Luminyn.</p>
           </div>
         </div>
 
