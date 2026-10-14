@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 const servicos = [
   {
     img: "/CardLuminmn.png",
@@ -45,27 +46,30 @@ function Servicos() {
     <section id="Servicos" className="py-10 md:py-20">
       
         <div className="flex flex-col items-center justify-center text-center px-6 bg-[inherit]">
-          <h1 className="text-4xl md:text-x font-extratiny  text-[#040514] text-tiny mb-2">
+          <h1 className="-mb-0.5 font-['Open_Sans'] text-[1.75rem] leading-none font-semibold text-[#938e8b]">
             Nossos Serviços
           </h1>
-            <h2 className="text-5xl font-bold text-[#101010] leading-[1.1]">
-              Soluções completas
-              <br />
-              para a sua{" "}
-              <span className="inline-grid items-baseline align-baseline leading-none bg-purple-800 text-white px-[0.25em] py-[0.05em] rounded-md select-none">
-                <span className="col-start-1 row-start-1 font-sans opacity-0 animate-crossfade-1">marca.</span>
-                <span className="col-start-1 row-start-1 font-serif italic opacity-0 animate-crossfade-2">marca.</span>
-                <span className="col-start-1 row-start-1 font-mono opacity-0 animate-crossfade-3">marca.</span>
-              </span>
-            </h2>
-          <h3 className="text-sm md:text-base font-bold text-[#101010]">
-            <span className="block mb-2 text-center">Da identidade visual ao desenvolvimento, oferecemos</span>
-              <span className="block mb-2 text-center">soluções personalizadas para cada etapa da sua </span>
-                <span className="block mb-2 text-center">empresa digital</span>
 
-           </h3>
-            
+         <h2 className="font-['Open_Sans'] text-5xl font-bold text-[#232323] leading-[1.05]">
+            Soluções completas
+            <br />
+            para a sua{" "}
+            <span className="inline-grid items-baseline align-baseline leading-none text-white select-none">
+              {/* caixa roxa fixa */}
+            <span aria-hidden="true" className="relative z-0 col-start-1 row-start-1 -mt-[0.1em] top-[0.2em] h-[0.95em] rounded-[0.15em] bg-purple-800" />
 
+            <span style={{ fontSize: "1.1em" }} className="relative z-10 col-start-1 row-start-1 px-[0.3em] leading-[0] text-left font-sans -translate-y-[0.0em] opacity-0 animate-crossfade-1">marca.</span>
+            <span className="relative z-10 col-start-1 row-start-1 px-[0.3em] leading-[0] text-left font-serif italic translate-y-[0] opacity-0 animate-crossfade-2">marca.</span>
+            <span className="relative z-10 col-start-1 row-start-1 px-[0.3em] leading-[0] text-left font-mono text-[1.11em] -translate-y-[0.0em] opacity-0 animate-crossfade-3">marca.</span>
+            </span>
+          </h2>
+
+
+          <h3 className="mt-2 font-['Open_Sans'] text-[1.0625rem] font-bold leading-[1.4] text-[#938e8b]">
+            <span className="block">Da identidade visual ao desenvolvimento, oferecemos</span>
+            <span className="block">soluções personalizadas para cada etapa da sua</span>
+            <span className="block">empresa digital</span>
+          </h3>
         </div>
 
       <div

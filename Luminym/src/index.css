@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @keyframes fade1 {
   0%, 25%, 100% { opacity: 1; }
   33%, 92% { opacity: 0; }
