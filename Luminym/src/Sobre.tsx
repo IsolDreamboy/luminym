@@ -39,17 +39,17 @@ function Sobre() {
 
           <div
             className={`absolute flex flex-col items-center justify-start md:justify-center w-full h-full p-5 lg:p-8 gap-3 lg:gap-4 text-center overflow-y-auto transition-all duration-300 ${
-              hoveredSide === "left" ? "opacity-100 bg-[pink]" : "opacity-0 pointer-events-none" 
+              hoveredSide === "left" ? "opacity-100 bg-[#1e2035]" : "opacity-0 pointer-events-none" 
             }`}
           >
-            <h3 className="text-[#02040a] text-xl lg:text-2xl font-bold mb-1">Programadores</h3>
-            <p className="text-[#02040a] text-sm lg:text-base xl:text-lg font-medium leading-tight">
+            <h3 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1">Programadores</h3>
+            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
               Transforme sua presença online com um site que realmente se destaca. Sou um programador experiente e posso criar um site personalizado que atenda às suas necessidades específicas.
             </p>
-            <p className="text-[#02040a] text-sm lg:text-base xl:text-lg font-medium leading-tight">
+            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
               Ofereço design responsivo e moderno, otimização para SEO e integração com redes sociais, além de suporte técnico contínuo.
             </p>
-            <p className="text-[#02040a] text-sm lg:text-base xl:text-lg font-bold leading-tight mt-1">
+            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-bold leading-tight mt-1">
               Entre em contato e vamos discutir como posso ajudar a levar seu negócio para o próximo nível!
             </p>
           </div>
@@ -71,17 +71,17 @@ function Sobre() {
 
           <div
             className={`absolute flex flex-col items-center justify-start md:justify-center w-full h-full p-5 lg:p-8 gap-3 lg:gap-4 text-center overflow-y-auto transition-all duration-300 ${
-              hoveredSide === "right" ? "opacity-100 bg-[pink]" : "opacity-0 pointer-events-none"
+              hoveredSide === "right" ? "opacity-100 bg-[#1e2035]" : "opacity-0 pointer-events-none"
             }`}
           >
-            <h3 className="text-[#02040a] text-xl lg:text-2xl font-bold mb-1">Programadores</h3>
-            <p className="text-[#02040a] text-sm lg:text-base xl:text-lg font-medium leading-tight">
+            <h3 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1">Programadores</h3>
+            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
               Transforme sua presença online com um site que realmente se destaca. Sou um programador experiente e posso criar um site personalizado que atenda às suas necessidades específicas.
             </p>
-            <p className="text-[#02040a] text-sm lg:text-base xl:text-lg font-medium leading-tight">
+            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
               Ofereço design responsivo e moderno, otimização para SEO e integração com redes sociais, além de suporte técnico contínuo.
             </p>
-            <p className="text-[#02040a] text-sm lg:text-base xl:text-lg font-bold leading-tight mt-1">
+            <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-bold leading-tight mt-1">
               Entre em contato e vamos discutir como posso ajudar a levar seu negócio para o próximo nível!
             </p>
           </div>
