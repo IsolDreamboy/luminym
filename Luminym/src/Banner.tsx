@@ -5,15 +5,16 @@ function Banner() {
 
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-[70vh] text-center px-6">
+    <section className="flex flex-col items-center justify-center min-h-[70vh] text-center px-5">
+        
           <h1 className="text-4xl md:text-x font-extratiny  text-[#040514] text-tiny mb-2">
             Luminyn Studio
           </h1>
-          <h2 className="text-4xl md:text-6xl text-[#1e2035] font-poppins font-bold max-w-2xl leading-none">
+          <h2 className="text-4xl md:text-8xl text-[#1e2035] font-poppins font-bold max-w-2xl leading-none">
             <span className="block mb-2">Ideias que</span> 
             
             
-            <span className="text-4xl md:text-6xl  inline-flex items-end justify-center h-[1em] mb-8 translate-y-[-0.1em]">
+            <span className="text-4xl md:text-7xl  inline-flex items-end justify-center h-[1em] mb-8 translate-y-[-0.1em]">
               <span className="leading-none ml-16 ">ganham</span>
               &nbsp;
               
