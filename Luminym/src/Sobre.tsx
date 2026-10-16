@@ -118,9 +118,9 @@ function Sobre() {
               border-r-[16px] border-r-transparent
               border-b-[20px] border-b-[#272940]
               /* DESKTOP: */
-              md:top-48 md:left-auto md:-left-5 md:translate-x-0
-              md:border-l-0
+              md:bottom-auto md:right-auto md:translate-x-5 md:top-48 md:-left-10
               md:border-r-[20px] md:border-r-[#333452]
+              md:border-l-0
               md:border-t-[16px] md:border-t-transparent
               md:border-b-[16px] md:border-b-transparent
               ${hoveredSide === "right" ? "opacity-100" : "opacity-0"}`}
