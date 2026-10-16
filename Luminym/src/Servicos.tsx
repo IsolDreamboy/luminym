@@ -57,7 +57,7 @@ function Servicos() {
             <span className="inline-grid items-baseline align-baseline leading-none text-white select-none">
              
              
-              {/* caixa  MARCA fixa */}
+              {/* caixa  MARCA */}
             <span aria-hidden="true" className="relative z-0 col-start-1 row-start-1 -mt-[0.1em] top-[0.2em] h-[0.95em] right-[0.10em] rounded-[0.15em] bg-[#040514]" />
 
             <span style={{ fontSize: "1.1em" }} className="relative z-10 col-start-1 row-start-1 px-[0.3em] leading-[0] text-left font-sans -translate-y-[0.0em] opacity-0 animate-crossfade-1">marca.</span>
