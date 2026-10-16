@@ -21,7 +21,7 @@ function Sobre() {
   return (
     <section id="Sobre">
       {/* Container centralizado */}
-      <div className="flex flex-col md:flex-row gap-4 md:gap-0 mx-auto h-210 md:h-120 w-full max-w-6xl px-4 md:px-10 my-10 md:my-16">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-0 mx-auto h-220 md:h-120 w-full max-w-6xl px-4 md:px-10 my-10 md:my-16">
 
         <div
           className="group w-full md:w-1/2 aspect-[4/5] min-h-[28rem] md:min-h-0 relative"
@@ -58,12 +58,19 @@ function Sobre() {
 
           {/* PERNINHA ) */}
           <div
-            className={`absolute top-48 -right-5 w-0 h-0 z-50 pointer-events-none transition duration-300 md:group-hover:-translate-y-5
-                      border-t-[16px] border-t-transparent
-                      border-l-[20px] border-l-[#272a41]
-                      border-b-[16px] border-b-transparent ${
-                        hoveredSide === "left" ? "opacity-100" : "opacity-0"
-                      }`}
+            className={`absolute z-50 w-0 h-0 pointer-events-none transition duration-300 md:group-hover:-translate-y-5
+              /* MOBILE: */
+              -bottom-4 left-1/2 -translate-x-1/2
+              border-l-[16px] border-l-transparent
+              border-r-[16px] border-r-transparent
+              border-t-[20px] border-t-[#272a41]
+              /* DESKTOP: */
+              md:bottom-auto md:left-auto md:translate-x-0 md:top-48 md:-right-5
+              md:border-l-[20px] md:border-l-[#272a41]
+              md:border-r-0
+              md:border-t-[16px] md:border-t-transparent
+              md:border-b-[16px] md:border-b-transparent
+              ${hoveredSide === "left" ? "opacity-100" : "opacity-0"}`}
           ></div>
         </div>
 
@@ -104,12 +111,19 @@ function Sobre() {
 
           {/* PERNINHA */}
           <div
-            className={`absolute top-48 -left-5 w-0 h-0 z-50 pointer-events-none transition duration-300 md:group-hover:-translate-y-5
-                      border-t-[16px] border-t-transparent
-                      border-r-[20px] border-r-[#333452]
-                      border-b-[16px] border-b-transparent ${
-                        hoveredSide === "right" ? "opacity-100" : "opacity-0"
-                      }`}
+            className={`absolute z-50 w-0 h-0 pointer-events-none transition duration-300 md:group-hover:-translate-y-5
+              /* MOBILE: */
+              -top-4 left-1/2 -translate-x-1/2
+              border-l-[16px] border-l-transparent
+              border-r-[16px] border-r-transparent
+              border-b-[20px] border-b-[#272940]
+              /* DESKTOP: */
+              md:top-48 md:left-auto md:-left-5 md:translate-x-0
+              md:border-l-0
+              md:border-r-[20px] md:border-r-[#333452]
+              md:border-t-[16px] md:border-t-transparent
+              md:border-b-[16px] md:border-b-transparent
+              ${hoveredSide === "right" ? "opacity-100" : "opacity-0"}`}
           ></div>
         </div>
       </div>
