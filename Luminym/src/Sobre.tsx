@@ -42,14 +42,14 @@ function Sobre() {
                 hoveredSide === "left" ? "opacity-100" : "opacity-0 pointer-events-none"
               }`}
             >
-              <h2 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1 text-shadow-[2px_2px_4px_black]">  Desenvolvedor Web</h2>
-              <h3 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1">Programadores</h3>
+              <h2 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1 text-shadow-[2px_2px_4px_black]">  A Arte em cada Pixel</h2>
+              <h3 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1">Design Web</h3>
               <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
-                Transforme sua presença online com um site que realmente se destaca. Sou um programador experiente e posso criar um site personalizado que atenda às suas necessidades específicas.
+               Criamos identidades visuais autorais, alinhadas ao posicionamento de cada marca e construídas a partir de escolhas visuais que expressam sua personalidade.
+
               </p>
               <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
-                Ofereço design responsivo e moderno, otimização para SEO e integração com redes sociais, além de suporte técnico contínuo.
-              </p>
+                De logotipos a materiais digitais e impressos, cada detalhe compõe uma linguagem própria, consistente e reconhecível </p>
               <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-bold leading-tight mt-1">
                 Entre em contato e vamos discutir como posso ajudar a levar seu negócio para o próximo nível!
               </p>
@@ -59,12 +59,12 @@ function Sobre() {
           {/* PERNINHA ) */}
           <div
             className={`absolute z-50 w-0 h-0 pointer-events-none transition duration-300 md:group-hover:-translate-y-5
-              /* MOBILE: */
+              /* cel: */
               -bottom-4 left-1/2 -translate-x-1/2
               border-l-[16px] border-l-transparent
               border-r-[16px] border-r-transparent
               border-t-[20px] border-t-[#272a41]
-              /* DESKTOP: */
+              /* pc: */
               md:bottom-auto md:left-auto md:translate-x-0 md:top-48 md:-right-5
               md:border-l-[20px] md:border-l-[#272a41]
               md:border-r-0
@@ -112,12 +112,12 @@ function Sobre() {
           {/* PERNINHA */}
           <div
             className={`absolute z-50 w-0 h-0 pointer-events-none transition duration-300 md:group-hover:-translate-y-5
-              /* MOBILE: */
+              /* cel: */
               -top-4 left-1/2 -translate-x-1/2
               border-l-[16px] border-l-transparent
               border-r-[16px] border-r-transparent
               border-b-[20px] border-b-[#272940]
-              /* DESKTOP: */
+              /* pc: */
               md:bottom-auto md:right-auto md:translate-x-5 md:top-48 md:-left-10
               md:border-r-[20px] md:border-r-[#333452]
               md:border-l-0
