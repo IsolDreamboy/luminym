@@ -30,7 +30,7 @@ function Sobre() {
           {/* Card */}
           <div className="absolute inset-0 bg-[#f0e6df] rounded-xl overflow-hidden flex justify-center items-center transition duration-300 md:group-hover:-translate-y-5">
             <img
-              className={`absolute h-full w-full object-contain p-8 sm:p-6 md:p-0 rounded-md transition-opacity duration-300 ${
+              className={`absolute h-full w-full object-contain p-8 sm:p-6 md:p-0 rounded-md transition-opacity duration-300 scale-[1.07] ${
                 hoveredSide === "left" ? "opacity-0" : "opacity-100"
               }`}
               src="/WhiteCat.png"
@@ -42,8 +42,16 @@ function Sobre() {
                 hoveredSide === "left" ? "opacity-100" : "opacity-0 pointer-events-none"
               }`}
             >
+              
+              <h3 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1 flex items-center gap-2">
+              <img 
+                src="pincel.png" 
+                alt="Pincel" 
+                className="w-10 h-8 object-contain invert drop-shadow-[0_0_6px_rgba(255,0,0,0.9)]" 
+              />
+              <span className="text-[#dfe3ff] text-xl lg:text-4xl font-bold mb-2 pl-2 text-shadow-[0_0_6px_rgba(251,191,36,0.6)]">Design Web</span></h3>
+              
               <h2 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1 text-shadow-[2px_2px_4px_black]">  A Arte em cada Pixel</h2>
-              <h3 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1">Design Web</h3>
               <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
                Criamos identidades visuais autorais, alinhadas ao posicionamento de cada marca e construídas a partir de escolhas visuais que expressam sua personalidade.
 
