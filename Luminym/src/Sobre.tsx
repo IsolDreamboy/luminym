@@ -27,7 +27,7 @@ function Sobre() {
           className="group w-full md:w-1/2 aspect-[4/5] min-h-[28rem] md:min-h-0 relative"
           {...interaction("right")}
         >
-          {/* Card */}
+          {/* Card — fundo + gato */}
           <div className="absolute inset-0 bg-[#f0e6df] rounded-xl overflow-hidden flex justify-center items-center transition duration-300 md:group-hover:-translate-y-5">
             <img
               className={`absolute h-full w-full object-contain p-8 sm:p-6 md:p-0 rounded-md transition-opacity duration-300 scale-[1.07] ${
@@ -36,50 +36,51 @@ function Sobre() {
               src="/WhiteCat.png"
               alt="LumCatWhite"
             />
-
-            <div
-              className={`absolute flex flex-col items-left justify-left md:justify-left w-full h-full p-5 lg:p-8 gap-3 lg:gap-4 text-left overflow-y-auto bg-gradient-to-tl from-[#202336] to-[#3B3B5E] transition-opacity duration-300 ${
-                hoveredSide === "left" ? "opacity-100" : "opacity-0 pointer-events-none"
-              }`}
-            >
-              
-              <h3 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1 flex items-center gap-2">
-              <img 
-                src="pincel.png" 
-                alt="Pincel" 
-                className="w-10 h-8 object-contain invert drop-shadow-[0_0_6px_rgba(255,0,0,0.9)]" 
-              />
-              <span className="text-[#dfe3ff] text-xl lg:text-4xl font-bold mb-2 pl-2 text-shadow-[0_0_6px_rgba(251,191,36,0.6)]">Design Web</span></h3>
-              
-              <h2 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1 text-shadow-[2px_2px_4px_black]">  A Arte em cada Pixel</h2>
-              <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
-               Criamos identidades visuais autorais, alinhadas ao posicionamento de cada marca e construídas a partir de escolhas visuais que expressam sua personalidade.
-
-              </p>
-              <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
-                De logotipos a materiais digitais e impressos, cada detalhe compõe uma linguagem própria, consistente e reconhecível </p>
-              <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-bold leading-tight mt-1">
-                Entre em contato e vamos discutir como posso ajudar a levar seu negócio para o próximo nível!
-              </p>
-            </div>
           </div>
 
-          {/* PERNINHA ) */}
+          {/* Overlay + PERNINHA — um único pai controla a opacidade dos dois */}
           <div
-            className={`absolute z-50 w-0 h-0 pointer-events-none transition duration-300 md:group-hover:-translate-y-5
-              /* cel: */
+            className={`absolute inset-0 z-10 pointer-events-none transition-opacity duration-300 md:group-hover:-translate-y-5 ${
+              hoveredSide === "left" ? "opacity-100 pointer-events-auto" : "opacity-0"
+            }`}
+          >
+            {/* Conteúdo do overlay */}
+            <div className="absolute inset-0 rounded-xl overflow-hidden">
+              <div className="flex flex-col items-left justify-left w-full h-full p-5 lg:p-8 gap-3 lg:gap-4 text-left overflow-y-auto bg-gradient-to-tl from-[#202336] to-[#3B3B5E]">
+                <h3 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1 flex items-center gap-2">
+                  <img
+                    src="pincel.png"
+                    alt="Pincel"
+                    className="w-10 h-8 object-contain invert drop-shadow-[0_0_6px_rgba(255,0,0,0.9)]"
+                  />
+                  <span className="text-[#dfe3ff] text-xl lg:text-4xl font-bold mb-2 pl-2 text-shadow-[0_0_6px_rgba(251,191,36,0.6)]">Design Web</span>
+                </h3>
+                <h2 className="text-[#dfe3ff] text-xl lg:text-2xl font-bold mb-1 text-shadow-[2px_2px_4px_black]">  A Arte em cada Pixel</h2>
+                <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
+                  Criamos identidades visuais autorais, alinhadas ao posicionamento de cada marca e construídas a partir de escolhas visuais que expressam sua personalidade.
+                </p>
+                <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-medium leading-tight">
+                  De logotipos a materiais digitais e impressos, cada detalhe compõe uma linguagem própria, consistente e reconhecível
+                </p>
+                <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-lg font-bold leading-tight mt-1">
+                  Entre em contato e vamos discutir como posso ajudar a levar seu negócio para o próximo nível!
+                </p>
+              </div>
+            </div>
+
+            {/* PERNINHA — irmão do overlay, mesmo pai, mesma opacidade */}
+            <div className="absolute pointer-events-none w-0 h-0
               -bottom-4 left-1/2 -translate-x-1/2
               border-l-[16px] border-l-transparent
               border-r-[16px] border-r-transparent
               border-t-[20px] border-t-[#272a41]
-              /* pc: */
               md:bottom-auto md:left-auto md:translate-x-0 md:top-48 md:-right-5
               md:border-l-[20px] md:border-l-[#272a41]
               md:border-r-0
               md:border-t-[16px] md:border-t-transparent
-              md:border-b-[16px] md:border-b-transparent
-              ${hoveredSide === "left" ? "opacity-100" : "opacity-0"}`}
-          ></div>
+              md:border-b-[16px] md:border-b-transparent"
+            ></div>
+          </div>
         </div>
 
         {/* Gato Azul */}
@@ -87,7 +88,7 @@ function Sobre() {
           className="group w-full md:w-1/2 aspect-[4/5] min-h-[28rem] md:min-h-0 relative"
           {...interaction("left")}
         >
-          {/* card */}
+          {/* Card — fundo + gato */}
           <div className="absolute inset-0 bg-[#f0e6df] rounded-xl overflow-hidden flex justify-center items-center transition duration-300 md:group-hover:-translate-y-5">
             <img
               className={`absolute h-full w-full object-contain p-8 sm:p-6 md:p-0 rounded-md transition-opacity duration-300 ${
@@ -96,44 +97,45 @@ function Sobre() {
               src="/white2.png"
               alt="LumCatBlue"
             />
-
-            {/* textos  */}
-            <div
-              className={`absolute flex flex-col items-left justify-start md:justify-left w-full h-full p-5 lg:p-8 gap-3 lg:gap-4 text-left overflow-y-auto bg-gradient-to-bl from-[#202336] to-[#3B3B5E] transition-opacity duration-300 ${
-                hoveredSide === "right" ? "opacity-100" : "opacity-0 pointer-events-none"
-              }`}
-            >
-              <h2 className="text-[#dfe3ff] text-xl lg:text-4xl font-bold mb-2 text-shadow-[0_0_6px_rgba(251,191,36,0.6)]"> {"< / >"} Desenvolvedor Web</h2>
-
-              <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-xl font-medium leading-tight">
-                Transforme sua presença online com um site que realmente se destaca. Sou um programador experiente e posso criar um site personalizado que atenda às suas necessidades específicas.
-              </p>
-              <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-xl font-medium leading-tight">
-                Ofereço design responsivo e moderno, otimização para SEO e integração com redes sociais, além de suporte técnico contínuo.
-              </p>
-              <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-xl font-bold leading-tight mt-1">
-                Entre em contato e vamos discutir como posso ajudar a levar seu negócio para o próximo nível!
-              </p>
-            </div>
           </div>
 
-          {/* PERNINHA */}
+          {/* Overlay + PERNINHA — um único pai controla a opacidade dos dois */}
           <div
-            className={`absolute z-50 w-0 h-0 pointer-events-none transition duration-300 md:group-hover:-translate-y-5
-              /* cel: */
+            className={`absolute inset-0 z-10 pointer-events-none transition-opacity duration-300 md:group-hover:-translate-y-5 ${
+              hoveredSide === "right" ? "opacity-100 pointer-events-auto" : "opacity-0"
+            }`}
+          >
+            {/* Conteúdo do overlay */}
+            <div className="absolute inset-0 rounded-xl overflow-hidden">
+              <div className="flex flex-col items-left justify-start w-full h-full p-5 lg:p-8 gap-3 lg:gap-4 text-left overflow-y-auto bg-gradient-to-bl from-[#202336] to-[#3B3B5E]">
+                <h2 className="text-[#dfe3ff] text-xl lg:text-4xl font-bold mb-2 text-shadow-[0_0_6px_rgba(251,191,36,0.6)]"> {"</ >"} Desenvolvedor Web</h2>
+                <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-xl font-medium leading-tight">
+                  Transforme sua presença online com um site que realmente se destaca. Sou um programador experiente e posso criar um site personalizado que atenda às suas necessidades específicas.
+                </p>
+                <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-xl font-medium leading-tight">
+                  Ofereço design responsivo e moderno, otimização para SEO e integração com redes sociais, além de suporte técnico contínuo.
+                </p>
+                <p className="text-[#dfe3ff] text-sm lg:text-base xl:text-xl font-bold leading-tight mt-1">
+                  Entre em contato e vamos discutir como posso ajudar a levar seu negócio para o próximo nível!
+                </p>
+              </div>
+            </div>
+
+            {/* PERNINHA — irmão do overlay, mesmo pai, mesma opacidade */}
+            <div className="absolute pointer-events-none w-0 h-0
               -top-4 left-1/2 -translate-x-1/2
               border-l-[16px] border-l-transparent
               border-r-[16px] border-r-transparent
               border-b-[20px] border-b-[#272940]
-              /* pc: */
               md:bottom-auto md:right-auto md:translate-x-5 md:top-48 md:-left-10
               md:border-r-[20px] md:border-r-[#333452]
               md:border-l-0
               md:border-t-[16px] md:border-t-transparent
-              md:border-b-[16px] md:border-b-transparent
-              ${hoveredSide === "right" ? "opacity-100" : "opacity-0"}`}
-          ></div>
+              md:border-b-[16px] md:border-b-transparent"
+            ></div>
+          </div>
         </div>
+
       </div>
     </section>
   );
